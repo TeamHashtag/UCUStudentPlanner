@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="prefnot"
+        android:title="Notification" >
+        <CheckBoxPreference
+            android:key="set"
+            android:summary="ring"
+            android:title="Alarm" />
+        <CheckBoxPreference android:key="get" android:title="deleted" android:summary="plan deleted"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

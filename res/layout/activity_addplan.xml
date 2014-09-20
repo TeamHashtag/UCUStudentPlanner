@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AddNotes" >
+
+    <EditText
+        android:id="@+id/notes_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Output"
+        android:layout_alignRight="@+id/btnSearch"
+        android:layout_below="@+id/btnDelete"
+        android:ems="10"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignBaseline="@+id/btnEdit"
+        android:layout_alignBottom="@+id/btnEdit"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="32dp"
+        android:background="@drawable/save" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/register_one" />
+
+    <EditText
+        android:id="@+id/editSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editComposeNotes"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="Search" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignRight="@+id/editComposeNotes"
+        android:layout_alignTop="@+id/editSearch"
+        android:background="@drawable/search" />
+
+    <EditText
+        android:id="@+id/editComposeNotes"
+        android:layout_width="match_parent"
+        android:layout_height="130sp"
+        android:layout_above="@+id/btnSave"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="Enter a message"
+        android:inputType="textMultiLine"
+        android:textColor="#cc0099" />
+
+    <EditText
+        android:id="@+id/editTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Output"
+        android:layout_alignLeft="@+id/editComposeNotes"
+        android:layout_alignRight="@+id/btnEdit"
+        android:ems="10"
+        android:hint="Time" />
+
+    <TextView
+        android:id="@+id/Output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editComposeNotes"
+        android:layout_alignRight="@+id/btnDelete"
+        android:layout_marginRight="15dp"
+        android:text="date"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/changeDate"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/Output"
+        android:layout_alignLeft="@+id/Output"
+        android:background="@drawable/sched"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTime"
+        android:layout_alignLeft="@+id/editTime"
+        android:layout_alignRight="@+id/editTime"
+        android:ems="10"
+        android:hint="Title" />
+
+    <EditText
+        android:id="@+id/editSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTitle"
+        android:layout_alignLeft="@+id/editTitle"
+        android:layout_alignRight="@+id/editTitle"
+        android:ems="10"
+        android:hint="Subject" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/editComposeNotes"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/btnEdit"
+        android:background="@drawable/delete_one" />
+
+</RelativeLayout>

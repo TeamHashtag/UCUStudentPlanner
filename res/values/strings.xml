@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UCU Student Planner</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_my_day">MyDay</string>
+    <string name="title_activity_my_homework">MyHomework</string>
+    <string name="title_activity_my_plan">MyPlan</string>
+    <string name="title_activity_my_exam">MyExam</string>
+    <string name="title_activity_mypreference">Setting</string>
+    <string name="title_activity_nav_draweritem">NavDraweritem</string>
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>My Day</item>
+        <item>My Plan</item>
+        <item>My Homework</item>
+        <item>My Exam</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_photos</item>
+        <item>@drawable/ic_communities</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_addplan">Addplan</string>
+    <string name="title_activity_db_adapter">DbAdapter</string>
+
+</resources>
