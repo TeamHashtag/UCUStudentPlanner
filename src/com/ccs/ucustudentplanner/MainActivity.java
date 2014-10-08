@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
@@ -15,7 +14,6 @@ import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -75,7 +73,6 @@ public class MainActivity extends Activity {
 		navDrawerItems.add(new NavDraweritem(navMenuTitles[3], navMenuIcons
 				.getResourceId(3, -1)));
 
-
 		// Recycle the typed array
 		navMenuIcons.recycle();
 
@@ -133,24 +130,6 @@ public class MainActivity extends Activity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// toggle nav drawer on selecting action bar app icon/title
-		if (mDrawerToggle.onOptionsItemSelected(item)) {
-			return true;
-		}
-		// Handle action bar actions click
-		switch (item.getItemId()) {
-		case R.id.action_settings:
-			startActivity(new Intent(getApplicationContext(),
-					Settings.class));
-			slideIt(1);
-			return true;
-		default:
-			return super.onOptionsItemSelected(item);
-		}
 	}
 
 	/* *
@@ -221,12 +200,14 @@ public class MainActivity extends Activity {
 		// Sync the toggle state after onRestoreInstanceState has occurred.
 		mDrawerToggle.syncState();
 	}
+
 	public void slideIt(int opt) {
 		if (opt != 0) {
 			overridePendingTransition(android.R.anim.slide_in_left,
 					android.R.anim.slide_out_right);
 		}
 	}
+
 	@Override
 	public void onConfigurationChanged(Configuration newConfig) {
 		super.onConfigurationChanged(newConfig);

@@ -16,7 +16,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Addplan extends Activity {
+public class AddHomework extends Activity {
 
 	DbAdapter dbcon = new DbAdapter(this);
 
@@ -91,7 +91,7 @@ public class Addplan extends Activity {
 								.toString(), editTime.getText().toString());
 
 				if (connectionsave > 0) {
-					Toast.makeText(getApplicationContext(), " Plan Saved ",
+					Toast.makeText(getApplicationContext(), " Homework Saved ",
 							Toast.LENGTH_LONG).show();
 				} else {
 					Toast.makeText(getApplicationContext(),
@@ -120,7 +120,7 @@ public class Addplan extends Activity {
 					Integer reccount = searchid.getCount();
 
 					Toast.makeText(getApplicationContext(),
-							reccount.toString() + "Plan(s) Found",
+							reccount.toString() + "Homework(s) Found",
 							Toast.LENGTH_SHORT).show();
 
 					notesid.setText(searchid.getString(0).toString());
@@ -134,7 +134,7 @@ public class Addplan extends Activity {
 
 				} else {
 
-					Toast.makeText(getApplicationContext(), "Plan NOT Found",
+					Toast.makeText(getApplicationContext(), "Homework NOT Found",
 							Toast.LENGTH_SHORT).show();
 
 				}
@@ -154,7 +154,7 @@ public class Addplan extends Activity {
 				dbcon.open();
 
 				if (dbcon.method_delete(daySearch)) {
-					Toast.makeText(getApplicationContext(), " Plan Deleted ",
+					Toast.makeText(getApplicationContext(), " HomeWork Deleted ",
 							Toast.LENGTH_LONG).show();
 
 					editComposeNotes.setText("");
@@ -188,7 +188,7 @@ public class Addplan extends Activity {
 
 				if (dbcon.method_update(daySearch, vdate, vmsg, vsubject,
 						vtitle, vtime)) {
-					Toast.makeText(getApplicationContext(), "Plan Updated!",
+					Toast.makeText(getApplicationContext(), "Homework Updated!",
 							Toast.LENGTH_LONG).show();
 
 					Output.setText("MM-DD-YYYY");

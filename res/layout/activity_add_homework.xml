@@ -64,7 +64,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="22dp"
         android:ems="10"
-        android:hint="Enter Plan"
+        android:hint="Enter Homework"
         android:inputType="textMultiLine"
         android:textColor="#cc0099" />
 
@@ -87,6 +87,15 @@
         android:layout_marginRight="15dp"
         android:text="date"
         android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/changeDate"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/Output"
+        android:layout_alignLeft="@+id/Output"
+        android:background="@drawable/sched"
+        android:textSize="12sp" />
 
     <EditText
         android:id="@+id/editTitle"
@@ -119,14 +128,5 @@
         android:layout_marginLeft="16dp"
         android:layout_toRightOf="@+id/btnEdit"
         android:background="@drawable/delete_one" />
-
-    <Button
-        android:id="@+id/changeDate"
-        android:layout_width="50dp"
-        android:layout_height="45dp"
-        android:layout_above="@+id/Output"
-        android:layout_alignRight="@+id/Output"
-        android:background="@drawable/sched"
-        android:textSize="12sp" />
 
 </RelativeLayout>

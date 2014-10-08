@@ -31,5 +31,7 @@
     <string name="desc_list_item_icon">Item Icon</string>
     <string name="title_activity_addplan">Addplan</string>
     <string name="title_activity_db_adapter">DbAdapter</string>
+    <string name="title_activity_add_homework">AddHomework</string>
+    <string name="title_activity_viewall_plan">ViewallPlan</string>
 
 </resources>

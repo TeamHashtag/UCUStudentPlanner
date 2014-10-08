@@ -42,10 +42,18 @@
             android:name=".NavDraweritem"
             android:label="@string/title_activity_nav_draweritem" >
         </activity>
-         <activity
+        <activity
             android:name=".Settings"
             android:label="@string/title_activity_mypreference"
-            android:parentActivityName="com.ccs.ucustudentplanner.MainActivity" >
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".AddHomework"
+            android:label="@string/title_activity_add_homework" >
+        </activity>
+        <activity
+            android:name=".ViewallPlan"
+            android:label="@string/title_activity_viewall_plan" >
         </activity>
     </application>
 
